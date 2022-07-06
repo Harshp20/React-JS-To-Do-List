@@ -1,9 +1,9 @@
-import "./App.css";
-import { Footer } from "./Components/Footer";
-import { Header } from "./Components/Header";
-import { Todos } from "./Components/Todos";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Todos } from "./components/Todos";
 import { useState } from "react";
-import AddToDo from "./Components/AddToDo";
+import AddToDo from "./components/AddToDo";
+import './App.css'
 
 function App() {
   const deleteTodo = (todo) => {
@@ -23,8 +23,8 @@ function App() {
     };
     setItem([...item, todo]);
   };
-  
-  const [item, setItem] = useState(()=>[]);
+
+  const [item, setItem] = useState(() => []);
 
   const flexContainer = {
     display: "flex",
@@ -36,7 +36,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <Header title="To Do List" dropdown={true} /*dropdown*/ />
 
       <div className={flexContainer}>
@@ -45,7 +45,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -12,7 +12,7 @@ export const Footer = () => {
     <>
       <footer className="bg-dark text-light text-center py-3" style={footerStyles}>
         
-        <span style={{marginTop: "50px"}}> Copyright &copy; Harsh Pradhan 2021 </span> 
+        <span style={{marginTop: "50px"}}> Copyright &copy; Harsh Pradhan 2022 </span> 
       </footer>
     </>
   );

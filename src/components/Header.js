@@ -1,9 +1,7 @@
 import React from "react";
-// import Button from "@restart/ui/esm/Button";
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Container } from "react-bootstrap";
-// import { NavDropdown } from "react-bootstrap";
 import PropTypes from "prop-types";
 
 export const Header = (props) => {
